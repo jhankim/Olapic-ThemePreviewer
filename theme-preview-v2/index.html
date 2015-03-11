@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic" rel="stylesheet" type="text/css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js"></script>
+	<script src="script.js"></script>
+	<script type="text/javascript" src="//photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js" async="async"></script>
+	<link rel="stylesheet" type="text/stylesheet" href="style.css" />
+	
+
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="widget-selector">
+		<div class="olapic-logo">
+			<img src="//photorank.me/static/images/olapic/bo/olapic-logo-header.png">
+		</div>
+		<h2>Choose your widget:</h2>
+		<select id="widget-list" class="customselect">
+			<option value="--">Select a widget style</option>
+			<option value="--" disabled>Rivington</option>
+			<option data-instance="c370bda8479f6d2f47f3c1ff7b88ef1e" data-apikey="e9e83b10c1f6d8a868d974b09c2c220f77b5b504744e12f757a4e444d60af253">Carousel A</option>
+			<option data-instance="d2606866acef47952e19ff795e987e80" data-apikey="e9e83b10c1f6d8a868d974b09c2c220f77b5b504744e12f757a4e444d60af253">Carousel B</option>
+			<option data-instance="4db4063761b114aa8aa67faf2669353b" data-apikey="e9e83b10c1f6d8a868d974b09c2c220f77b5b504744e12f757a4e444d60af253">Gallery 1</option>
+
+			<option value="--" disabled>Chelsea</option>
+			<option data-instance="81bc5ad0cdcbc70759f1ee5eadb5f2f7" data-apikey="3048ee2e17469ba67811dbf7f8ba941a11c61151c1ddbfd9b3c21c60f091efaa" id="lo">Carousel C</option>
+			<option data-instance="fc50ca9ca85f59edbaf9a4f3f4d5b854" data-apikey="3048ee2e17469ba67811dbf7f8ba941a11c61151c1ddbfd9b3c21c60f091efaa">Carousel D</option>
+			<option data-instance="2eb1208ae10e250b668d4a539a9f850f" data-apikey="3048ee2e17469ba67811dbf7f8ba941a11c61151c1ddbfd9b3c21c60f091efaa">Gallery 2</option>
+
+			<option value="--" disabled>Ludlow</option>
+			<option data-instance="4f016c52952bea67b4fff94ce5273c85" data-apikey="80a5db1b378c225b71b1301ef57cc2356d0521c0f352f18abb3c18269316699a">Gallery + Map 1</option>
+
+			<option value="--" disabled>Callao</option>
+			<option data-instance="d97d9e0a20e679e73c4df98561840acd" data-apikey="6a21a9fb58591418f0b1dd1100dbe6764fa9462fc32bee969a4103b90743e009">Gallery + Map 2</option>
+
+			<option value="--" disabled>Bowery</option>
+			<option data-instance="0b6aa0682ebd6e48f3d2f22fa7efa47a" data-apikey="e8e93687b355e25352907d1a081d0be1599f9db06a8584610540524b3e0007db">Carousel</option>
+			<option data-instance="da8f4c96098973fcf8134928b82502fb" data-apikey="e8e93687b355e25352907d1a081d0be1599f9db06a8584610540524b3e0007db">Gallery 3</option>
+
+			<option value="--" disabled>Cordoba</option>
+			<option data-instance="70193791c6083fd9be5f7912f1fb6889" data-apikey="3ebdef04c32c45bfff798fbc64bb6af7873409d6de9297e027d616a2026f2f2b">Gallery 4</option>
+
+			<option value="--" disabled>Salta</option>
+			<option data-instance="36b53775d6250aa0c9bc8c18036c9a32" data-apikey="3ebdef04c32c45bfff798fbc64bb6af7873409d6de9297e027d616a2026f2f2b">Gallery 5</option>
+
+			<option value="--" disabled>Oxford</option>
+			<option data-instance="789f775a194ae004ad2b0a11f7607437" data-apikey="3ebdef04c32c45bfff798fbc64bb6af7873409d6de9297e027d616a2026f2f2b">Gallery 6</option>
+
+			<option value="--" disabled>Madison</option>
+			<option data-instance="8ddc2239c91ff4beddd9746adbfb4af9" data-apikey="3ebdef04c32c45bfff798fbc64bb6af7873409d6de9297e027d616a2026f2f2b">Gallery 7</option>
+
+			<option value="--" disabled>Lorimer</option>
+			<option data-instance="7b848665e01526142bbb8d8529623376" data-apikey="3ebdef04c32c45bfff798fbc64bb6af7873409d6de9297e027d616a2026f2f2b">Gallery 8</option>
+
+		</select>
+
+<!-- 	<h2>Widget Configurable parameters:</h2>
+	<ul id="widget-params"></ul>
+ -->
+<!-- 	<h3>Note:</h3>
+	<p>If you use a background image, please provide a mockup of how the background image would look on the different viewports (tablet, mobile device).<br><br> Default behavior is to scale down the background image depending on the widget container size.</p> -->
+
+
+		<div id="widget-viewport-tool">
+			<h3>Select widget size</h3>
+			<div class="widget-size">
+				<button type="button" class="adjust-viewport-btn" value="320">320px</button>
+				<button type="button" class="adjust-viewport-btn" value="480">480px</button>
+				<button type="button" class="adjust-viewport-btn" value="768">768px</button>
+			</div>
+			
+			<p>Custom size:</p> <input type="number" class="adjust-viewport-custom" placeholder="600" required>
+
+			<div class="viewport-actions">
+				<button type="button" class="adjust-viewport-btn-custom">resize</button>
+				<button type="button" class="adjust-viewport-btn adjust-viewport-btn-reset" value="auto">reset</button>
+			</div>
+		</div>
+	</div><!-- close #widget-selectot -->
+
+	<div id="widget-container-area">
+		
+		
+
+		<div id="widget-container-viewport">
+			
+			<!--<div class="widget-breadcrumb"><span>Style:</span> Chelsea  >  Gallery 1</div>-->
+			
+			<iframe id="widget-iframe" src="" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+			<!-- <div id="olapic_specific_widget"></div> -->
+
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+  	$(document).ready(function() {
+	  $(".customselect").select2({
+  			minimumResultsForSearch: Infinity
+		});
+	});
+</script>
+</body>
+</html>
